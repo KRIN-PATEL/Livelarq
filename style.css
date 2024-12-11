@@ -1,0 +1,66 @@
+  /* Hover Effect */
+  .hover-slide {
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hover-slide:hover {
+    transform: translateX(-5px);
+    color: #0d6efd;
+    /* Slightly brighter hover color */
+  }
+
+  /* Optional underline animation */
+  .hover-slide::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0d6efd;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .hover-slide:hover::after {
+    width: 100%;
+  }
+
+
+  /* Add a sliding underline effect */
+  .nav-link {
+    position: relative;
+    color: #000;
+    /* Default text color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    /* Adjust based on spacing */
+    width: 0;
+    height: 2px;
+    /* Thickness of the underline */
+    background-color: #007bff;
+    /* Blue underline */
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    width: 100%;
+    /* Full width on hover or active */
+  }
+
+  .nav-link.active {
+    color: #007bff;
+    /* Highlight active link color */
+  }
+
+  .nav-link:hover {
+    color: #0056b3;
+    /* Darker blue on hover */
+  }
