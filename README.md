@@ -31,13 +31,3 @@ Livelarq is a simple, minimalist website designed to showcase the **Livelarq** b
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/KRIN-PATEL/Livelarq.git
-Navigate to the project directory:
-
-cd Livelarq
-Open the index.html file in your browser:
-
-You can simply open the file by double-clicking it or dragging it into your browser window.
-
-View the live website:
-
-Check out the live version of the website deployed on Render: https://livelarq.onrender.com/
